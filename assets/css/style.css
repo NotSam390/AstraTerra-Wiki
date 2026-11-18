@@ -85,6 +85,10 @@ a {
     text-decoration: underline; 
 }
 
+.content a:hover {
+    color :#123c82;
+}
+
 .eyebrow {
     color: #60718b;
     font-size: 12px;
