@@ -80,6 +80,11 @@ a {
     background: #fff;
 }
 
+.content a { 
+    color: #1d5bbf; 
+    text-decoration: underline; 
+}
+
 .eyebrow {
     color: #60718b;
     font-size: 12px;
