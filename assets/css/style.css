@@ -80,13 +80,14 @@ a {
     background: #fff;
 }
 
-.content a { 
-    color: #1d5bbf; 
-    text-decoration: underline; 
+.content a,
+.content a:visited {
+    color: #1d5bbf;
+    text-decoration: underline;
 }
 
 .content a:hover {
-    color :#123c82;
+    color: #123c82;
 }
 
 .eyebrow {
@@ -167,3 +168,4 @@ h1 {
         padding: 22px;
     }
 }
+
