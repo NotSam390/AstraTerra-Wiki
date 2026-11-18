@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f3f5f8;
+    color: #202936;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 18px max(24px, calc((100% - 1100px) / 2));
+    background: #17243a;
+    color: white;
+}
+
+.site-name {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.search input {
+    width: min(280px, 42vw);
+    padding: 10px 12px;
+    border: 1px solid #536078;
+    border-radius: 4px;
+    background: #fff;
+    font: inherit;
+}
+
+.site-nav {
+    display: flex;
+    gap: 28px;
+    padding: 14px max(24px, calc((100% - 1100px) / 2));
+    border-bottom: 1px solid #d5dbe4;
+    background: #fff;
+    color: #34425a;
+}
+
+.layout {
+    display: grid;
+    max-width: 1100px;
+    grid-template-columns: 190px minmax(0, 1fr);
+    gap: 48px;
+    margin: 36px auto;
+    padding: 0 24px;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.sidebar h2 {
+    margin: 0 0 4px;
+    font-size: 16px;
+}
+
+.sidebar a {
+    color: #526178;
+}
+
+.content {
+    min-height: 360px;
+    padding: 28px;
+    border: 1px solid #dce1e8;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.eyebrow {
+    color: #60718b;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin: 12px 0;
+    font-size: 32px;
+}
+
+.intro {
+    color: #526178;
+}
+
+.placeholder {
+    margin-top: 40px;
+    padding: 20px;
+    border-left: 3px solid #738cac;
+    background: #f3f5f8;
+}
+
+.placeholder h2,
+.placeholder p {
+    margin-top: 0;
+}
+
+.placeholder p {
+    margin-bottom: 0;
+    color: #526178;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    clip-path: inset(50%);
+}
+
+@media (max-width: 640px) {
+    .site-header {
+        padding: 16px 20px;
+    }
+
+    .site-name {
+        font-size: 20px;
+    }
+
+    .site-nav {
+        gap: 18px;
+        overflow-x: auto;
+        padding: 12px 20px;
+    }
+
+    .layout {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        margin: 24px auto;
+    }
+
+    .sidebar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 12px 20px;
+    }
+
+    .sidebar h2 {
+        width: 100%;
+    }
+
+    .content {
+        padding: 22px;
+    }
+}

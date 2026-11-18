@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AstraTerra Wiki</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Converts Markdown into HTML -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <header class="site-header">
+        <a class="site-name" href="index.html">AstraTerra</a>
+        <form class="search" role="search">
+            <label class="sr-only" for="search">Search the wiki</label>
+            <input id="search" type="search" placeholder="Search the wiki">
+        </form>
+    </header>
+
+    <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html">Overview</a>
+        <a href="planets.html">Planets</a>
+        <a href="#">People</a>
+        <a href="#">Community</a>
+    </nav>
+
+    <main class="layout">
+        <!-- Automatically populated with the article's headings -->
+        <aside class="sidebar" id="article-toc">
+            <h2>On this page</h2>
+        </aside>
+
+        <!-- Automatically populated with your Markdown content -->
+        <article class="content" id="article-content">
+            <p>Loading entry...</p>
+        </article>
+    </main>
+
+    <script src="assets/js/wiki.js"></script>
+</body>
+</html>
